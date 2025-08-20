@@ -1,13 +1,13 @@
 import './App.css'
-import type {ResponseLoginDto} from "./dto/ResponseLoginDto.ts";
-import { Login } from './Pages/Login.tsx';
+import {LoginPage} from './Pages/LoginPage.tsx';
+import {LoginProvider} from "./app/LoginContext.tsx";
 
 function App() {
 
     return (
-        <>
-           <Login />
-        </>
+        <LoginProvider>
+            <LoginPage/>
+        </LoginProvider>
     )
 }
 
