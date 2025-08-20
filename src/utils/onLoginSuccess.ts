@@ -12,5 +12,5 @@ export const onLoginSuccess = (query: URLSearchParams, token: string) => {
     if (!url) {
         url = "https://technofleet.org";
     }
-    window.location.href = url;
+    // window.location.href = url;
 }
